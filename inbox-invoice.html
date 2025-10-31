@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox/Invoice - Chocolate Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/ararat_logo.png" alt="Chocolate Paradise Logo" id="logo">
+        </div>
+        <nav>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                <a href="inbox-invoice.html" id="inboxInvoiceLink">Inbox/Invoice</a>
+            </div>
+            <div class="auth-links">
+                <a href="login.html" id="loginLink">Login</a>
+                <a href="register.html" id="registerLink">Register</a>
+                <a href="#" id="logoutLink" style="display: none;">Logout</a>
+                <span id="welcomeMessage"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inbox-invoice" class="section">
+            <h2>Inbox/Invoice</h2>
+            <div class="inbox-container">
+                <div class="inbox-section">
+                   
+                    <div id="orderHistory"></div>
+                </div>
+                <div class="inbox-section">
+                
+                    <div id="contactMessages"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ararat Trading (2002) Corp. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

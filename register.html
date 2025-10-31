@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Chocolate Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/ararat_logo.png" alt="Chocolate Paradise Logo" id="logo">
+        </div>
+        <h1>Register</h1>
+        <nav>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="auth-links">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="register">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="newUsername">Username:</label>
+                <input type="text" id="newUsername" required>
+
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" required>
+
+                <label for="userType">User Type:</label>
+                <select id="userType" required>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+
+                <input type="password" id="adminPassword" placeholder="Admin Password" style="display: none;">
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ararat Trading (2002) Corp. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
